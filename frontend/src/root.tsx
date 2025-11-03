@@ -12,7 +12,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
+        {/* Favicon 配置 - 使用现有的 logo.svg */}
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="icon" type="image/png" href="/logo.svg" />
+        <link rel="apple-touch-icon" href="/logo.svg" />
+        <link rel="apple-touch-icon-precomposed" href="/logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Value Cell</title>
         <Meta />

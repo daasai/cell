@@ -1,6 +1,11 @@
 #!/bin/bash
 set -Eeuo pipefail
 
+# setup UV store
+export UV_INDEX_URL=https://mirrors.aliyun.com/pypi/simple/
+export UV_HTTP_TIMEOUT=120
+
+
 # Simple project launcher with auto-install for bun and uv
 # - macOS: use Homebrew to install missing tools
 # - other OS: print guidance
